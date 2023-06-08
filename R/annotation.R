@@ -6,6 +6,8 @@
 #'
 #' @return a scatterplot of circles
 #'
+#' @import ggplot2
+#'
 #' @export
 
 

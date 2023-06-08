@@ -5,6 +5,8 @@
 #'
 #' @return a plot of the random shape
 #'
+#' @import ggplot2
+#'
 #' @export
 
 

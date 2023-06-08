@@ -7,6 +7,8 @@
 #'
 #' @return a scatterplot of diamonds
 #'
+#' @import ggplot2
+#'
 #'@export
 
 

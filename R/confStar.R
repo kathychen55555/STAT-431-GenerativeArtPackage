@@ -7,6 +7,8 @@
 #'
 #' @return a scatterplot of stars
 #'
+#' @import ggplot2
+#'
 #' @export
 
 
