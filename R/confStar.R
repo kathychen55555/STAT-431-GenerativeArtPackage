@@ -1,4 +1,4 @@
-#' Returns a plot of randomly generated stars
+#' Returns a plot of randomly generated star(s)
 #'
 #' @param plot the plot to which to apply the stars
 #' @param n the number of stars
@@ -7,7 +7,7 @@
 #'
 #' @return a scatterplot of stars
 #'
-#'
+#' @export
 
 
 confetti_star <- function(plot, n, color = "red", size = 2) {
