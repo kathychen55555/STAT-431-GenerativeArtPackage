@@ -6,6 +6,8 @@
 #'
 #' @return a modified plot of the shape
 #'
+#' @import ggplot2
+#'
 #' @export
 
 
