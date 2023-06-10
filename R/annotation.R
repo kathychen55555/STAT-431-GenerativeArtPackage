@@ -12,8 +12,8 @@
 
 
 
-add_text <- function(art, text, size) {
-  art <- art +
+add_text <- function(plot, text, size) {
+  plot <- plot +
     annotate("text", x = 0.5, y = 1, label = text, hjust = 0.5, vjust = 0.5, size = size)
-  return(art)
+  return(plot)
 }
