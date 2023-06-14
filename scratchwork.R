@@ -28,7 +28,7 @@ generate_random_shape <- function(num_points, num_cycles) {
 
 
 
-generateRandomShape <- function(num_points) {
+generate_random_shape2 <- function(num_points) {
   x_coords <- c()
   y_coords <- c()
 
