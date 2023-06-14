@@ -26,6 +26,46 @@ generate_random_shape <- function(num_points, num_cycles) {
 
 
 
+
+
+generateRandomShape <- function(num_points) {
+  # Initialize empty lists for x and y coordinates
+  x_coords <- c()
+  y_coords <- c()
+
+  # Generate random coordinates for the shape
+  for (i in 1:num_points) {
+    # Generate random x and y coordinates between 0 and 1
+    x <- runif(1)
+    y <- runif(1)
+
+    # Append the coordinates to the lists
+    x_coords <- c(x_coords, x)
+    y_coords <- c(y_coords, y)
+  }
+
+  # Create a data frame from the coordinates
+  shape_data <- data.frame(x = x_coords, y = y_coords)
+
+  # Generate a plot of the shape
+  plot <- ggplot(shape_data, aes(x, y)) +
+    geom_polygon(fill = "white", color = "black") +
+    theme_void() +
+    theme(plot.margin = margin(0, 0, 0, 0))
+  return(plot)
+}
+
+
+
+
+
+
+
+
+
+
+
+
 add_color_to_shape <- function(shape, shape_color, background_color) {
   # Modify the aesthetics to change shape color
   shape <- shape +
@@ -98,7 +138,6 @@ shape1 <- confetti_circle(shape1, n =100, color = "white", size = 2)
 
 # Display the shape with color
 print(shape1)
-
 
 
 
